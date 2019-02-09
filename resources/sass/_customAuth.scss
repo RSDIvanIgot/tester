@@ -1,0 +1,62 @@
+@font-face {
+   font-family: 'Aero';
+   src: url('/../fonts/Aero/Aero.eot?#iefix') format("embedded-opentype"), 
+         url('/../fonts/Aero/Aero.woff2') format("woff2"), 
+         url('/../fonts/Aero/Aero.woff') format("woff"), 
+         url('/../fonts/Aero/Aero.ttf') format("truetype"), 
+         url('/../fonts/Aero/Aero.svg#Aero') format("svg");
+}
+
+.body-bg {
+   background-image: url("/../images/building.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+   filter: blur(5px);
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+.body-header {
+   min-height: 150px;
+   background-color: $ld-red;
+   padding: 20px;
+
+   .img-holder {
+      max-width: 140px;
+   }
+}
+
+.title-text {
+   font-family: 'Aero';
+   color: #fff;
+   text-align: center;
+   font-size: 30px;
+   @media(min-width: 760px){
+      font-size: 65px;
+      line-height: 55px;
+   }
+   
+}
+.login-box {
+   margin-top: 0;
+}
+
+.login-box-body {
+   padding: 35px;
+
+   .form-group {
+      font-family: 'Calibri';
+   }
+}
+
+.btn-login {
+   background-color: $ld-red;
+   color: #fff;
+   border-radius: 8px;  
+}
